@@ -2295,7 +2295,8 @@ add_subdirectory(cmake/reports)
 
 if(NOT CONFIG_TEST)
 if(CONFIG_ASSERT AND (NOT CONFIG_FORCE_NO_ASSERT))
-  message(WARNING "__ASSERT() statements are globally ENABLED")
+  # This is complete clutter during the development process.
+  # message(WARNING "__ASSERT() statements are globally ENABLED")
 endif()
 endif()
 
